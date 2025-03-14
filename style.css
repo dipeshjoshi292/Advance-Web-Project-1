@@ -194,8 +194,9 @@ color: white;
     margin-bottom: 30px;
 }
 #about img{
-    width:200px;
+    width:175px;
     height:15%;
+    border-radius:100px;
 }
 #textabout a{
     padding:12px 22px;
