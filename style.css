@@ -1,0 +1,246 @@
+/*smooth  scrollig - attach loco scroll css
+                    attach locomotive scroll min js
+                    some code from loco github for js
+gsap - attach gsap cdn
+scrolltrigger [for animation]*/
+#minicircle{
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height:10px;
+    position: absolute;
+    z-index: 99999;
+    background-color: #fff;
+    border-radius: 50%;
+}
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.bounding{
+    width:fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+#main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+#hero{
+    width:100% ;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+#nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+color: white;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+#nav h2{
+    text-decoration: none;
+}
+#heading{
+    margin-top: 90px;
+}
+#heading h1{
+    line-height: 1;
+    opacity: .6;
+    margin-left: 30px;
+    font-size: 9vw; 
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#heading #second{
+    margin-left: 230px;
+}
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+.blocktext h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+}
+#choti{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+
+}
+#choti h5{
+    text-transform: uppercase;
+    margin-top: .5vw;
+    text-align: right;
+    font-size: 1vw;
+}
+#herofoot{
+    padding:0 2vw;
+    position: absolute;
+    
+    bottom: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#herofoot a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+#herofoot #iconset{
+    display: flex;
+    gap: 5px;
+}
+#herofoot .circle{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #888;
+}
+#secondhero{
+    color: white;
+    padding-right: 10vw;
+    background-color: black;
+    width:100%;
+    height:100vh;
+    padding-top: 200px;
+}
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding:3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7.0vw;
+    opacity: .7;
+}
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+.elem img{
+    /* opacity:0;
+    height: 125%;
+    width: 25%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 999; */
+    /* transform: translate(-50%, -50%);  */
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    width:30%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#about{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    background-color: black;
+    padding: 15vw 5vw;
+    padding-left: 40vw;
+}
+#textabout{
+    width: 25rem;
+    
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+
+}
+#textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+#about img{
+    width:200px;
+    height:15%;
+}
+#textabout a{
+    padding:12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+#subscribe{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    padding-left: 3vw;
+    padding-bottom:7vw ;
+}
+#subscribe h5{
+    opacity: .6;
+    text-transform: uppercase;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10x;
+}
+#footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footer a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
